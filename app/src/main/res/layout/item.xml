@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/itemBlue"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/itemPicCI"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:src="@drawable/shuppet"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/itemBlueTint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/itemNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_item"
+            android:textColor="@color/itemNameText"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/itemTypeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_item"
+            android:textAllCaps="true"
+            android:textColor="@color/itemPositionText"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>
